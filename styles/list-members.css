@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 235px;
+  background-position: center;
+  background-color: white;
+  transition: 0.5s;
+}
+
+#check:checked~.main {
+  margin-left: 0px;
+}
+
+/* Main Body Container Styles */
+.body-container {
+  width: 100%;
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 0px;
+  padding: 30px;
+  background: rgb(241, 241, 241);
+}
+
+/* "Add Memeber" Button Styles */
+body > div.main > div > div > div.add-btn > a {
+  float:initial;
+  font-size: medium;
+  color: black;
+  background-color: skyblue;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  /* margin: 0px 0px 20px 45%; */
+  padding: 7px 10px;
+}
+
+.add-btn {
+  margin: 0px 0px 20px 45%;
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table th {
+  background-color: cornflowerblue;
+  padding: 15px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Table Buttons Styles */
+.table td {
+  padding-right: 0px;
+  padding-left: 1.25%;
+}
+
+/* tr:nth-child(n+2) td:nth-of-type(7) {
+  /* border: 0; *
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+body > div.main > div > div > table > tbody > tr:nth-child(n+2) > td.updt-btn {
+  border-top: 1px;
+  border-right: none;
+  border-left: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 9.2px;
+}
+
+/* body > div.main > div > div > table > tbody > tr:nth-child(2) > td.del-btn {
+  /* border: 0; *
+  display:table-column-group;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: -15px; *
+} */
+
+.table td a button {
+  float: left;
+  font-size: medium;
+  color: black;
+  background-color: gainsboro;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 5px 10px;
+}
+
+.table td a button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.table .del-btn a button{
+  background-color: rgb(255, 158, 147);
+}
+
+/* Pagination Styles */
+.pagination {
+  padding-left: 38%;
+  padding-top: 20px;
+}
+
+.pagination a {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.pagination a:hover {
+  font-size: 17px;
+  padding: 8px 12px;
+  background-color: powderblue;
+}
+
+body > div > div.section > div.main-body-container > div > a:nth-child(2) {
+  background-color: skyblue;
+}
+
+body > div > div.section > div.main-body-container > div > a:nth-child(2):hover {
+  background-color: gainsboro;
+}
+
+footer {
+  margin-top: auto;
+}
+

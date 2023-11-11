@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#check {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 25px;
+  z-index: 1000;
+  background: rgb(5, 68, 104);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.left_area h3 {
+  color: #fff;
+  margin-top: 0px;
+  margin-left: 35px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span {
+  color: skyblue;
+}
+
+.logout_btn {
+  float: right;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  background: bisque;
+  border: 2px solid black;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: -35px;
+  margin-right: 50px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.5s;
+  /* transition-property: background; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout_btn:hover {
+  background: beige;
+}
+
+.sidebar {
+  position: fixed;
+  overflow: hidden;
+  background: rgb(5, 68, 104);
+  margin-top: 0px;
+  padding-top: 7px;
+  top: 90px;
+  left: 0;
+  width: 235px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+  z-index: 1000;
+}
+
+.sidebar .profile_image {
+  width: 100px;
+  height: 100px;
+  border: solid 1px gainsboro;
+  border-style: double;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  
+}
+
+.sidebar h4 {
+  font-size: 20px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sidebar P {
+  /* font-size: 20px; */
+  color: skyblue;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.sidebar a {
+  color: white;
+  display: block;
+  width: 100%;
+  line-height: 55px;
+  text-decoration: none;
+  padding-left: 30px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+  border-top: solid 1px gray;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+body > div.sidebar > a:nth-child(7) {
+  border-bottom: solid 1px gray;
+}
+
+.sidebar a:hover {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  background: skyblue;
+}
+
+.sidebar a:active {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  background: skyblue;
+}
+
+.sidebar i {
+  padding-right: 12px;
+}
+
+label #sidebar_btn {
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  /* left: 300px; */
+  font-size: 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover {
+  color: skyblue;
+}
+
+label #sidebar_btn:active {
+  color: skyblue;
+}
+
+#check:checked~.sidebar {
+  left: -300px;
+}
+
+#check:checked~.sidebar a span {
+  display: none;
+}
+
+#check:checked~.sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
